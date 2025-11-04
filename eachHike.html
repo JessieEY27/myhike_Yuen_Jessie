@@ -23,13 +23,49 @@
     <!-- Main content goes here -->
     <main class="container py-4">
       <h1 id="hikeName">Loading...</h1>
+
+      <!-- Centered image -->
       <img
         id="hikeImage"
-        class="img-fluid rounded mt-3"
+        class="img-fluid rounded mt-3 d-block mx-auto"
         src=""
         alt="Hike image"
       />
+
+      <!-- Centered button -->
+      <button id="writeReviewBtn" class="btn btn-primary">Write Review</button>
     </main>
+
+    <div class="container">
+      <h2>Reviews:</h2>
+      <div id="details-go-here"></div>
+      <!-- Here is the container for cards with horizontal scrolling -->
+      <div class="card-container">
+        <div id="reviewCardGroup" class="row row-cols-auto">
+          <!-- Add your card templates here -->
+        </div>
+      </div>
+    </div>
+
+    <template id="reviewCardTemplate">
+      <div class="card bg-secondary">
+        <img class="card-img-top" />
+        <div class="card-body bg-light">
+          <h5 class="title">placeholder</h5>
+          <p class="star-rating"></p>
+          <p class="time">placeholder</p>
+          <p class="level">placeholder</p>
+          <p class="season">placeholder</p>
+          <p class="scrambled">placeholder</p>
+          <p class="flooded">placeholder</p>
+          <br />
+          <p class="description">
+            This card has supporting text below as a natural lead-in to
+            additional content.
+          </p>
+        </div>
+      </div>
+    </template>
 
     <site-footer></site-footer>
 
